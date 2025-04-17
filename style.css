@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  background-color: #f4f4f4;
+}
+
+#animatedBox {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: coral;
+  transition: transform 1s ease-in-out;
+}
+
+#animatedBox.move {
+  animation: slide 1s forwards;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); background-color: coral; }
+  100% { transform: translateX(200px); background-color: lightseagreen; }
+}
